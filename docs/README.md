@@ -10,4 +10,4 @@ Pre-requisitos
 - Android Build Tools v23.0.2
 - Android Support Repository v23.3.0
 
-Para información sobre suporte y licencia, por favor dirígase al repositorio oficial en [GitHub][https://github.com/netzahdzc/ma-test-fiware]
+Para información sobre suporte y licencia, por favor dirígase al repositorio oficial en [GitHub](https://github.com/netzahdzc/ma-test-fiware)
