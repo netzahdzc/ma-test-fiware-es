@@ -59,7 +59,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../application/">Mobile Application</a>
+    <a class="" href="../application/">Mobile application</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -72,7 +72,7 @@
     <a class="current" href="./">Architecture</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#architecture">Architecture</a></li>
+    <li class="toctree-l2"><a href="#arquitectura">Arquitectura</a></li>
     
 
     </ul>
@@ -110,17 +110,17 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="architecture">Architecture</h1>
-<p>The architecture the most common services required in terms of a data sensing application.  </p>
-<p>Please note that the mobile applications is to be used as tools to collect mobile devices sensor-data (e.g., accelerometer, orientation) while patients perform a set of physical activities. The generated applications are meant to be installed in a smartphone / smartwatch that will be worn by the participant. </p>
-<p>In this context, data has been collected on each device and will eventually sent to FIWARE Cloud by calling respective RESTful verbs. Data will connect to Orion Context Broker through the PEP component (Police Enforcement Point), which will invoke a filter mechanism to ensure that only expected data will be analyzed. Once data has been stored into Cosmos Big Data GE and processed by Theseus (a component that analyzes small amounts of data), data is then retrieved using Bifrost; which serves as an broker that transports query parameters from the Wirecloud GE. Finally, data retrieved from the Cosmos GE, it is sent back to Bifrost in order to be displayed on their corresponding  widgets.</p>
+                <h1 id="arquitectura">Arquitectura</h1>
+<p>La arquitectura de los servicios más comunes requeridos en términos de una aplicación de detección de datos.</p>
+<p>Tenga en cuenta que la aplicación móvil se utilizá como herramienta para recopilar datos de sensores de dispositivos móviles (por ejemplo, acelerómetro, orientación), mientras que los pacientes realizan un conjunto de actividades físicas. Las aplicaciones generadas están destinadas a ser instaladas en un smartphone/smartwatch que será usado por el participante.</p>
+<p>En este contexto, los datos se han recopilado en cada dispositivo y eventualmente se enviarán a la nube de FIWARE usando los verbos del respectivo RESTful. Los datos se conectarán a Orion Context Broker a través del componente PEP (police Enforcement Point), que invocará un mecanismo de filtrado para asegurar que sólo se analizarán los datos esperados. Una vez que los datos han sido almacenados en el Cosmos Big Data GE y procesados por Theseus (un componente que analiza pequeñas cantidades de datos), los datos se recuperan mediante Bifrost; que sirve como intermediario que trasporta parámetros de consulta desde el Wirecloud GE. Finalmente los datos recuperados del cosmos GE, se envían de vuelta a Bifrost con e fin de ser exhibidos en sus Widgets correspondientes.</p>
 <p><img alt="alt text" src="../images/SmartHealthApp.png" /></p>
-<p>The Scenario’s main contributions focus on three components:</p>
-<p><strong>Theseus.</strong> A python-based implementation of open-source software to facilitate the analysis of data. It doesn’t try to compete with the available Data Analytic GE, but to complement it for quick prototyping purposes by using public libraries, such as SciPy.</p>
-<p><strong>Bifrost.</strong> A software implementation  developed on python using the Flink framework  to connect widgets with historical data components. Bifrost serves as a broker that transports query parameters from the Wirecloud GE to the Cosmos GE through an interpreter (analogically illustrated as a bridge). Once data is retrieved from the Cosmos GE, it is sent to the bridge, and then the data is parsed into NGSI format and sent back to the Wirecloud GE; so it can be displayed over corresponding widgets. </p>
-<p>Source code can be find in GitHub: <a href="https://github.com/netzahdzc/Bifrost/tree/master/Bifrost">Bifrost</a></p>
-<p><strong>oHealth-Browser.</strong> A software widget developed to handle three different modules: Participants, Physical test, and Parameters of Interest. Altogether, functions are built into a single component which can be extended in order to cover a wider range of services. The GUI is personalized based on basic information, such as the IP address of the remote service (e.g., Cosmos or a third party server), Module of service (i.e., Participants, PhysicalTest, or ParameterOfInteres), and Attributes to retrieve, among others.</p>
-<p>Source code can be find in GitHub: <a href="https://github.com/netzahdzc/Bifrost/tree/master/oHealthCxt-Browser">oHealth-Browser</a></p>
+<p>Las principales contribuciones del escenario se centran en tres componentes:</p>
+<p><strong>Theseus.</strong> Una implementación basada en Python de software de código abierto para facilitar el análisis de datos. No trata de competir con la Data Analytic GE disponible, sino complementarla para propósitos rápidos de prototipado usando bibliotecas públicas, como SciPy.</p>
+<p><strong>Bifrost.</strong> Una implementación de software desarrollada en Python utilizando el framework Flink para conectar widgets con componentes de datos históricos. Bifrost sirve como intermediario que transporta parámetros de consulta desde el Wirecloud GE al Cosmos GE a través de un intérprete (ilustrado analógicamente como un puente). Una vez que los datos se recuperan del Cosmos GE, se envían al puente y, a continuación, los datos se analizan en formato NGSI y se envían de nuevo al Wirecloud GE; así que se puede mostrar sobre los widgets correspondientes.</p>
+<p>El código fuente se puede encontrar en GitHub: <a href="https://github.com/netzahdzc/Bifrost/tree/master/Bifrost">Bifrost</a></p>
+<p><strong>oHealth-Browser.</strong> Un Widget de software desarrollado para manejar tres módulos diferentes: participantes, prueba física y parámetros de interés. En conjunto, las funciones estan integradas en un solo componente que puede extenderse para cubrir una gama más amplia de servicios. La interfaz gráfica de Usuario se personaliza basándose en la información básica, como la dirección IP del servicio remoto (por ejemplo Cosmos o un servidor de terceros ), Módulo de servicio ( es decir, participantes, prueba física o parámetros de interés) y atributos que se deben recuperar entre otros.</p>
+<p>El código fuente se puede encontrar en GitHub: <a href="https://github.com/netzahdzc/Bifrost/tree/master/oHealthCxt-Browser">oHealth-Browser</a></p>
               
             </div>
           </div>
