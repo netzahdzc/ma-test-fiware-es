@@ -1,7 +1,7 @@
 MA-Test App
 ===================================
 
-Esta aplicación permite al usuario recopilar datos objetivos para análisis adicionales (del lado del servidor) del balance, la fuerza y el riesgo de caídas. Este es un proyecto en curso.
+Esta aplicación permite al usuario recopilar datos para la estimación de balance, fuerza y riesgo de caídas. Este es un proyecto en curso.
 
 Pre-requisitos
 --------------
